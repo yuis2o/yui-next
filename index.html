@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>YUI-NEXT</title>
+    <meta name="description" content="ポートフォリオサイト" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-------------------------------------------
+      リセットCSS
+  --------------------------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+
+    <!-------------------------------------------
+      Googleフォント
+  --------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Noto Sans JP -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Momo Trust Display -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-------------------------------------------
+      オリジナルCSS
+  --------------------------------------------->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-------------------------------------------
+      ヘッダー
+  --------------------------------------------->
+    <header id="header" class="wrapper">
+      <!-- ロゴ -->
+      <h1>
+        <a href="index.html">
+          <img src="./img/00_logo.gif" alt="yuinext" />
+        </a>
+      </h1>
+
+      <!-- メニュー -->
+      <nav>
+        <ul>
+          <li><a href="#profile">profile</a></li>
+          <li><a href="#message">message</a></li>
+          <li><a href="#library">library</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-------------------------------------------
+        メインビジュアル
+    --------------------------------------------->
+      <div id="home">
+        <picture>
+          <!-- 画面幅600px以下のときに表示する画像 -->
+          <source
+            media="(max-width: 600px)"
+            srcset="./img/01_mainvisual_sp.jpg"
+          />
+
+          <!-- 601px以上のときに表示する画像 -->
+          <img src="./img/01_mainvisual_dt.png" alt="メインビジュアル" />
+        </picture>
+      </div>
+
+      <!-------------------------------------------
+        profile
+    --------------------------------------------->
+      <section id="profile" class="wrapper">
+        <h2 class="sec-title">profile</h2>
+
+        <!-- デスクトップでは画像と文章を横並びにする -->
+        <div class="profile-content">
+          <!-- プロフィール画像 -->
+          <img class="profile-image" src="./img/02_icon.gif" alt="アイコン" />
+
+          <!-- 名前とプロフィール文章 -->
+          <div class="profile-text">
+            <h3>YUI NITAWAKI</h3>
+
+            <p>
+              福岡県出身。趣味は食べることと、カラオケ。特技は腹話術。<br />
+              飲み会現役時代は、誘われた飲み会は断らないをモットーに、週５、一日三本立て（全て別の飲み会）をこなし、局長をもってしても「弊社で大熊さん（旧姓）を知らない人はモグリ」と言わす。<br />
+              その過程で生まれた「BB居酒屋リスト」は現在掲載300店舗を迎え、多くの飲み会幹事の居酒屋選びを救っている。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------------------------
+        message
+    --------------------------------------------->
+      <section id="message" class="wrapper">
+        <h2 class="sec-title">message</h2>
+
+        <p>
+          たべっ子どうぶつをきっかけにモンブランピクチャーズ様のことを知りました。実際に応募を意識したのは広報職の求人を見つけたことがきっかけでしたが、それからはどんな形であれ、貴社に入社することだけを目指してきました。<br />
+          今まで自分が何をしたいのか、深く考えたことのなかった私が、この歳になって初めて目標を持ち、新しい環境に飛び込みました。学校に通い、毎週末勉強会を開いてクラスメイトと励まし合い、たくさんの人との出会いを通して、考え方も少しずつ変わっていきました。<br />
+          監督が手がけられたたべっ子どうぶつ、そして貴社の存在がなければ、今の私も、この経験も生まれていませんでした。貴重なきっかけをいただき、本当にありがとうございます。<br /><br />
+          未経験からのスタートで、まだ３、４か月しか経っておらず、プロフェッショナルの皆様からすれば、ひよこ以前の状態かもしれません。それでも、今の私にできるアイディアとスキル、そして想いのすべてを詰め込みました。<br />
+          こちらに掲載の架空の実写映画作品は、実際のエピソードを元に制作しています。
+          <br>少しでも楽しんでいただけますと幸いです。
+        </p>
+      </section>
+
+      <!-------------------------------------------
+        library
+        3作品のサムネイル一覧
+    --------------------------------------------->
+      <section id="library" class="wrapper">
+        <h2 class="sec-title">library</h2>
+
+        <ul class="library-list">
+          <!-------------------------------------------
+            1作品目のサムネイル
+        --------------------------------------------->
+          <li>
+            <a href="#movie-tea">
+              <figure>
+                <img
+                  src="./img/03_tea.jpg"
+                  alt="とりあえずウーロン茶の紹介へ移動"
+                />
+                <figcaption>とりあえずウーロン茶</figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <!-------------------------------------------
+            2作品目のサムネイル
+        --------------------------------------------->
+          <li>
+            <a href="#movie-candy">
+              <figure>
+                <img
+                  src="./img/04_candy.jpg"
+                  alt="STAR CANDY STORYの紹介へ移動"
+                />
+                <figcaption>STAR CANDY STORY</figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <!-------------------------------------------
+            3作品目のサムネイル
+        --------------------------------------------->
+          <li>
+            <a href="#movie-clover">
+              <figure>
+                <img src="./img/05_clover.jpg" alt="LUCKY CLOVERの紹介へ移動" />
+                <figcaption>LUCKY CLOVER</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-------------------------------------------
+        3作品の詳しい紹介
+    --------------------------------------------->
+      <section class="movie-detail-list wrapper">
+        <!-------------------------------------------
+          1作品目：とりあえずウーロン茶
+      --------------------------------------------->
+        <article id="movie-tea" class="movie">
+          <!-- 作品のメイン画像 -->
+          <img
+            class="movie-image"
+            src="./img/03_tea.jpg"
+            alt="とりあえずウーロン茶"
+          />
+
+          <!-- タイトル・上映時間・ストーリー -->
+          <section class="movie-info">
+            <h2 class="movie-title">とりあえず ウーロン茶</h2>
+
+            <p class="movie-time">2026　2時間55分</p>
+
+            <h3 class="story-title">ストーリー</h3>
+
+            <div class="story">
+              <p>
+                仕事とプライベートはきっちり分けたい。
+                職場の人とは仕事の付き合いで十分。
+                <br>
+                そう思っていたゆいが転職した先は国を支えるお堅い役場！
+                ――のはずだった。
+                <br>
+                終業のチャイムと同時に、「喉が渇いた～」とこちらをチラリ。
+                ニカッと笑った次の瞬間、手首のスナップで夜の街へ誘う――。
+                そこは、飲み会モンスターたちの巣窟だった……！
+                <br>
+                学生時代は狂気のピエロ。笑いは取れても教室の隅にひとり。
+                会話はいつもドッジボール。
+                <br><br>
+                「このままじゃ、一生独身かもしれない！」
+                <br><br>
+                そう危機感を抱いたゆいは、コミュニケーション能力を身につけるべく、
+                ジョッキ音が鳴り響く夜の街へ、武者修行の旅に出る。
+                <br>
+                「俺は亭主関白だ！ シャー！」と威嚇するスネークおじ。
+                「東大ではこんなの習ってないぞ！
+                お前はクビだ！」と叫ぶ断罪キング。
+                そして、霞が関より参りし全長2mのキャリア官僚。
+                次々と立ちはだかる強敵たち。
+                <br>
+                <br>
+                武器はウーロン茶一杯。
+                <br><br>
+                氷が溶けて少しずつ増えていく、その一杯だけを頼りに、
+                果たして最後まで戦い抜くことができるのか！？
+                <br>
+                乾杯コール沸き起こる、笑いあり、涙あり（？）の
+                今世紀最大飲み会エンターテインメント、開幕。
+              </p>
+            </div>
+          </section>
+
+          <!-- 1作品目のコメント -->
+          <section class="comments">
+            <h3>comment</h3>
+            <img
+              src="./img/03_tea_comment.png"
+              alt="とりあえずウーロン茶に寄せられたコメント"
+            />
+          </section>
+        </article>
+
+        <!-------------------------------------------
+          2作品目：STAR CANDY STORY
+      --------------------------------------------->
+        <article id="movie-candy" class="movie">
+          <!-- 作品のメイン画像 -->
+          <img
+            class="movie-image"
+            src="./img/04_candy.jpg"
+            alt="STAR CANDY STORY"
+          />
+
+          <!-- タイトル・上映時間・ストーリー -->
+          <section class="movie-info">
+            <h2 class="movie-title">STAR CANDY STORY</h2>
+
+            <p class="movie-time">2026　90分</p>
+
+            <h3 class="story-title">ストーリー</h3>
+
+            <div class="story">
+              <p>
+                平和だった星に、ある日突然現れた魔法使い。<br>
+                星々の輝きを次々と奪い、なぜか金平糖に変えてしまう。<br>
+                活発な男の子・サンは、星の輝きを取り戻す旅に出る。<br>
+                しかし魔法使いには、誰も知らない理由があった。<br>
+                すれ違いの先に待つのは、戦いか、それとも――。</p>
+            </div>
+          </section>
+
+          <!-- 2作品目のコメント -->
+          <section class="comments">
+            <h3>comment</h3>
+            <img
+              src="./img/04_candy_comment.png"
+              alt="STAR CANDY STORYに寄せられたコメント"
+            />
+          </section>
+        </article>
+
+        <!-------------------------------------------
+          3作品目：LUCKY CLOVER
+      --------------------------------------------->
+        <article id="movie-clover" class="movie">
+          <!-- 作品のメイン画像 -->
+          <img
+            class="movie-image"
+            src="./img/05_clover.jpg"
+            alt="LUCKY CLOVER"
+          />
+
+          <!-- タイトル・上映時間・ストーリー -->
+          <section class="movie-info">
+            <h2 class="movie-title">LUCKY CLOVER</h2>
+
+            <p class="movie-time">2026　1時間30分</p>
+
+            <h3 class="story-title">ストーリー</h3>
+
+            <div class="story">
+              <p>
+                博多で働くしがない事務員のゆいは、落ち込むことがあると
+                四葉のクローバーを探しに行く。<br>
+                ある日、コピー機のトレイの設置を忘れ、
+                コピー用紙が飛び散り、必殺「乱れ紙」をかましてしまう。<br>
+                そして落ち込んだ帰り道に公園へ立ち寄り、
+                クローバーを探す成人女性がひとり。<br>
+                そんなゆいに突然声をかけてきたのは、ひとりの少年だった。<br><br>
+                本当の幸せとは何か。<br>
+                三十路の女性と見知らぬ少年が織りなす、 ハートフルストーリー。
+              </p>
+            </div>
+          </section>
+
+          <!-- 3作品目のコメント -->
+          <section class="comments">
+            <h3>comment</h3>
+            <img
+              src="./img/05_clover_comment.png"
+              alt="LUCKY CLOVERに寄せられたコメント"
+            />
+          </section>
+        </article>
+      </section>
+      
+    </main>
+  </body>
+</html>
